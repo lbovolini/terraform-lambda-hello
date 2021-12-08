@@ -45,7 +45,7 @@ resource "aws_lambda_function" "hello_api" {
   filename         = data.archive_file.hello_api_artifact.output_path
   source_code_hash = data.archive_file.hello_api_artifact.output_base64sha256
 
-  timeout     = 1
+  timeout     = 10
   memory_size = 128
 
   tags = local.common_tags

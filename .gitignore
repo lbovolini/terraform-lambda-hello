@@ -1,0 +1,8 @@
+layers/
+layer.tf
+files
+lambdas/hello-api/*
+!lambdas/hello-api/main.py
+!lambdas/hello-api/requirements.txt
+env
+.terraform
